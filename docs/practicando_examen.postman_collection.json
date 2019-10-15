@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "3ecff121-880b-4cda-9484-7c67ab215ee4",
+		"name": "practicando_examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/cnd/update/:idcondominios",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ajustar",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "SUB",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cnd/update/:idcondominios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cnd",
+						"update",
+						":idcondominios"
+					],
+					"variable": [
+						{
+							"key": "idcondominios",
+							"value": "PRU001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/cnd/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codigo",
+							"value": "PRU002",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "la cabaña2",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "por ahi2",
+							"type": "text"
+						},
+						{
+							"key": "piscina",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "disponibles",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "cuota",
+							"value": "300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cnd/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cnd",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/cnd/delete/:idcondominio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/cnd/delete/:idcondominio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cnd",
+						"delete",
+						":idcondominio"
+					],
+					"variable": [
+						{
+							"key": "idcondominio",
+							"value": "PRU002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/cnd/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/cnd/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cnd",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
